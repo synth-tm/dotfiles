@@ -1,28 +1,31 @@
 return {
-    "mason-org/mason-lspconfig.nvim",
-        opts = {
-            ensure_installed = {
-                "bashls",
-                "cssls",
-                "css_variables",
-                "html",
-                "hyprls",
-                "jsonls",
-                "lua_ls",
-            },
+    "williamboman/mason-lspconfig.nvim",
+    opts = {
+        ensure_installed = {
+            "jsonls",
+            "hyprls",
+            "cssls",
+            "bashls",
+            "ts_ls",
+            "marksman",
+            "lua_ls",
         },
+    },
     dependencies = {
-        "mason-org/mason.nvim",
-        opts = {
-            ui = {
-                icons = {
-                    package_installed = "✓",
-                    package_pending = "➜",
-                    package_uninstalled = "✗"
+        {
+            "mason-org/mason.nvim",
+            opts = {
+                ui = {
+                    icons = {
+                        package_installed = "✓",
+                        package_pending = "➜",
+                        package_uninstalled = "✗"
+                    },
                 },
             },
         },
+        {
+            "neovim/nvim-lspconfig"
+        },
     },
-        "neovim/nvim-lspconfig"
 }
-
