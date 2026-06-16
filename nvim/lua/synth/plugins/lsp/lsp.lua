@@ -10,6 +10,9 @@ return {
         })
     end,
     },
-    { "folke/lazydev.nvim", opts = {} },
+    {
+        "folke/lazydev.nvim",
+            opts = {},
+    },
 }
 

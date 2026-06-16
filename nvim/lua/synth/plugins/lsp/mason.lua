@@ -6,7 +6,6 @@ return {
             "hyprls",
             "cssls",
             "bashls",
-            "ts_ls",
             "marksman",
             "lua_ls",
         },
