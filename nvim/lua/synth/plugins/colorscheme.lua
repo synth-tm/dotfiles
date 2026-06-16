@@ -3,21 +3,23 @@ local function enable_transparency()
 end
 return {
     {
-        "rebelot/kanagawa.nvim",
+        "ellisonleao/gruvbox.nvim",
         priority = 1000,
         config = function()
-            vim.cmd.colorscheme "kanagawa-dragon"
+            vim.cmd.colorscheme "gruvbox"
             enable_transparency()
         end
     },
+}
+
+return {
     {
         "nvim-lualine/lualine.nvim",
         dependencies = {
             "nvim-tree/nvim-web-devicons",
         },
         opts = {
-            theme = 'kanagawa',
-        }
+            theme = 'gruvbox',
+        },
     },
 }
-
