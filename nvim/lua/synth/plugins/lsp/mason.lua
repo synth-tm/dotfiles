@@ -8,6 +8,8 @@ return {
             "bashls",
             "marksman",
             "lua_ls",
+            "clojure_lsp",
+            "elixirls",
         },
     },
     dependencies = {
