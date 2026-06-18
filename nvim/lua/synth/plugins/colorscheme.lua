@@ -10,9 +10,6 @@ return {
             enable_transparency()
         end
     },
-}
-
-return {
     {
         "nvim-lualine/lualine.nvim",
         dependencies = {

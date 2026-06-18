@@ -2,14 +2,6 @@ return {
     "williamboman/mason-lspconfig.nvim",
     opts = {
         ensure_installed = {
-            "jsonls",
-            "hyprls",
-            "cssls",
-            "bashls",
-            "marksman",
-            "lua_ls",
-            "clojure_lsp",
-            "elixirls",
         },
     },
     dependencies = {
